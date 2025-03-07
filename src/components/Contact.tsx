@@ -130,8 +130,8 @@ const Contact = () => {
           )}>
             <div className="space-y-8">
               <div className="flex items-start">
-                <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                  <MailIcon className="h-6 w-6 text-primary" />
+                <div className="flex-shrink-0 bg-mint/20 p-3 rounded-full">
+                  <MailIcon className="h-6 w-6 text-mint" />
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Email</h3>
@@ -140,8 +140,8 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                  <PhoneIcon className="h-6 w-6 text-primary" />
+                <div className="flex-shrink-0 bg-mint/20 p-3 rounded-full">
+                  <PhoneIcon className="h-6 w-6 text-mint" />
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Phone</h3>
@@ -150,8 +150,8 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                  <MapPinIcon className="h-6 w-6 text-primary" />
+                <div className="flex-shrink-0 bg-mint/20 p-3 rounded-full">
+                  <MapPinIcon className="h-6 w-6 text-mint" />
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Location</h3>
@@ -258,7 +258,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 px-6 rounded-lg bg-primary text-white font-medium transition-all hover:translate-y-[-2px] hover:shadow-lg active:translate-y-[0px] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+                className="w-full py-3 px-6 rounded-lg bg-mint text-deepblue font-medium transition-all hover:translate-y-[-2px] hover:shadow-lg active:translate-y-[0px] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
               >
                 {isSubmitting ? (
                   <span className="flex items-center justify-center">

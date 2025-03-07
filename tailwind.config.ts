@@ -57,6 +57,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				mint: {
+					DEFAULT: '#B4EDC9',
+					light: '#C7F3D7',
+					dark: '#96E4B5'
+				},
+				deepblue: {
+					DEFAULT: '#0A2540',
+					light: '#163A5F',
+					dark: '#041528'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

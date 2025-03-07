@@ -31,7 +31,7 @@ const Hero = () => {
     <section ref={sectionRef} className="relative min-h-screen flex items-center opacity-0 transition-opacity duration-1000">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -inset-[10%] opacity-50">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl animate-spin-slow" />
+          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-mint/10 rounded-full filter blur-3xl animate-spin-slow" />
           <div className="absolute top-2/3 left-1/4 w-64 h-64 bg-blue-300/20 rounded-full filter blur-3xl animate-spin-slow" style={{ animationDirection: 'reverse' }} />
           <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-300/10 rounded-full filter blur-3xl animate-spin-slow" style={{ animationDuration: '25s' }} />
         </div>
@@ -39,7 +39,7 @@ const Hero = () => {
 
       <div className="container-custom relative z-10">
         <div className="max-w-4xl">
-          <p className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary bg-primary/10 rounded-full animate-fade-in">
+          <p className="inline-block px-4 py-2 mb-4 text-sm font-medium text-mint bg-mint/10 rounded-full animate-fade-in">
             Full-Stack Developer
           </p>
           <h1 className="h1 mb-6 animate-fade-in animate-delay-100">Crafting Digital Experiences with Precision & Purpose</h1>
@@ -50,13 +50,13 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-300">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-lg bg-primary text-white font-medium transition-all hover:translate-y-[-2px] hover:shadow-lg active:translate-y-[0px]"
+              className="px-6 py-3 rounded-lg bg-mint text-deepblue font-medium transition-all hover:translate-y-[-2px] hover:shadow-lg active:translate-y-[0px]"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 rounded-lg bg-secondary text-foreground font-medium transition-all hover:translate-y-[-2px] hover:shadow-md active:translate-y-[0px]"
+              className="px-6 py-3 rounded-lg bg-secondary text-foreground font-medium transition-all hover:translate-y-[-2px] hover:shadow-md active:translate-y-[0px] border border-mint/30"
             >
               Get In Touch
             </a>
