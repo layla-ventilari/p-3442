@@ -36,7 +36,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-apple",
         isScrolled
-          ? "bg-deepblue/80 backdrop-blur-md shadow-sm py-4"
+          ? "bg-background/80 backdrop-blur-md shadow-sm py-4"
           : "bg-transparent py-6"
       )}
     >
@@ -51,7 +51,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="hover-underline text-sm font-medium text-foreground/80 hover:text-mint transition-colors"
+              className="hover-underline text-sm font-medium text-foreground/80 hover:text-purple transition-colors"
             >
               {item.name}
             </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 bg-deepblue z-40 md:hidden transition-all duration-300 ease-apple",
+          "fixed inset-0 bg-background z-40 md:hidden transition-all duration-300 ease-apple",
           mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
         style={{ top: '72px' }}
@@ -86,7 +86,7 @@ const Navbar = () => {
               key={item.name}
               href={item.href}
               onClick={toggleMobileMenu}
-              className="text-xl font-medium hover:text-mint transition-colors"
+              className="text-xl font-medium hover:text-purple transition-colors"
             >
               {item.name}
             </a>

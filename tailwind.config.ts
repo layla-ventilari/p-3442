@@ -57,15 +57,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				mint: {
-					DEFAULT: '#B4EDC9',
-					light: '#C7F3D7',
-					dark: '#96E4B5'
+				purple: {
+					DEFAULT: '#9b87f5',
+					light: '#D6BCFA',
+					dark: '#6E59A5',
+					vivid: '#8B5CF6',
+					deep: '#1A1F2C'
 				},
-				deepblue: {
-					DEFAULT: '#0A2540',
-					light: '#163A5F',
-					dark: '#041528'
+				magenta: {
+					DEFAULT: '#D946EF'
+				},
+				blue: {
+					bright: '#1EAEDB'
+				},
+				charcoal: {
+					DEFAULT: '#403E43'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
