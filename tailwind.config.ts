@@ -73,6 +73,21 @@ export default {
 				charcoal: {
 					DEFAULT: '#403E43'
 				},
+				lavender: {
+					DEFAULT: '#e6e6fa',
+					light: '#f0f0ff',
+					dark: '#d0d0e8'
+				},
+				mint: {
+					DEFAULT: '#96facd',
+					light: '#b8fcde',
+					dark: '#7ad9b0'
+				},
+				pastel: {
+					blue: '#d8e2f9',
+					purple: '#e6d9f9',
+					text: '#4a4a6a'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -121,6 +136,10 @@ export default {
 				'spin-slow': {
 					from: { transform: 'rotate(0deg)' },
 					to: { transform: 'rotate(360deg)' }
+				},
+				'pulse-soft': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
@@ -131,10 +150,12 @@ export default {
 				'fade-in-left': 'fade-in-left 0.5s ease-out forwards',
 				'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
 				'image-shimmer': 'image-shimmer 2s infinite linear',
-				'spin-slow': 'spin-slow 20s linear infinite'
+				'spin-slow': 'spin-slow 20s linear infinite',
+				'pulse-soft': 'pulse-soft 3s ease-in-out infinite'
 			},
 			transitionTimingFunction: {
 				'apple': 'cubic-bezier(0.42, 0, 0.58, 1)',
+				'bounce-soft': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
 			},
 			backdropFilter: {
 				'none': 'none',

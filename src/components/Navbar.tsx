@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,36 +47,40 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="hover-underline text-sm font-medium text-foreground/80 hover:text-purple transition-colors"
+              className="hover-underline text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             >
               {item.name}
             </a>
           ))}
+          <ThemeToggle />
         </nav>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          onClick={toggleMobileMenu}
-          className="md:hidden focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? (
-            <XIcon className="h-6 w-6" />
-          ) : (
-            <MenuIcon className="h-6 w-6" />
-          )}
-        </button>
+        {/* Mobile Menu Toggle and Theme Toggle */}
+        <div className="flex items-center space-x-2 md:hidden">
+          <ThemeToggle />
+          <button
+            onClick={toggleMobileMenu}
+            className="focus:outline-none focus:ring-2 focus:ring-primary/50 p-1 rounded-md"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <XIcon className="h-6 w-6" />
+            ) : (
+              <MenuIcon className="h-6 w-6" />
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 bg-background z-40 md:hidden transition-all duration-300 ease-apple",
+          "fixed inset-0 bg-background/95 backdrop-blur-md z-40 md:hidden transition-all duration-300 ease-apple",
           mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
         style={{ top: '72px' }}
@@ -86,7 +91,7 @@ const Navbar = () => {
               key={item.name}
               href={item.href}
               onClick={toggleMobileMenu}
-              className="text-xl font-medium hover:text-purple transition-colors"
+              className="text-xl font-medium hover:text-primary transition-colors"
             >
               {item.name}
             </a>
