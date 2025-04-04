@@ -85,13 +85,14 @@ const Hero = () => {
           {/* Elemento Visual */}
           <div className="order-1 md:order-2 animate-fade-in animate-delay-400">
             <div className="relative rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] card-hover">
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-70 z-10"></div>
-              <div className="image-fade-edges">
+              {/* Improved gradient overlay with better centering */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-60 z-10 flex items-center justify-center"></div>
+              <div className="image-fade-edges flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/8ccf8994-9684-4a3b-873e-5aba5e55fdc1.png" 
-                  alt="Developer with purple workspace lighting" 
-                  className="w-full h-auto object-cover transform scale-[1.01]"
-                  style={{ aspectRatio: "4/3" }}
+                  src="/lovable-uploads/36486274-1ac2-47ab-b2a7-2f7befb45232.png" 
+                  alt="Ilustração de uma desenvolvedora de IA" 
+                  className="w-full h-auto object-cover object-center transform scale-[1.02]"
+                  style={{ aspectRatio: "1/1" }}
                   loading="eager"
                 />
               </div>
