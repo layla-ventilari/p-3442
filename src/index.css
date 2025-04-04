@@ -1,42 +1,17 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Dark Theme (default) */
-    --background: 260 25% 11%;
-    --foreground: 0 0% 98%;
-    --card: 260 25% 11%;
-    --card-foreground: 0 0% 98%;
-    --popover: 260 25% 11%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 265 71% 75%;
-    --primary-foreground: 260 25% 11%;
-    --secondary: 260 30% 25%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 260 30% 25%;
-    --muted-foreground: 265 10% 75%;
-    --accent: 260 30% 25%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 265 25% 30%;
-    --input: 265 25% 30%;
-    --ring: 265 71% 75%;
-    --radius: 1rem;
-  }
-
-  .light {
-    /* Light Theme */
+    /* Light Theme (default) */
     --background: 252 56% 98%;
     --foreground: 252 10% 25%;
     --card: 252 56% 98%;
     --card-foreground: 252 10% 25%;
     --popover: 252 56% 98%;
     --popover-foreground: 252 10% 25%;
-    --primary: 147 87% 79%;
+    --primary: 265 71% 75%; /* Tom principal de lilás */
     --primary-foreground: 252 10% 25%;
     --secondary: 252 25% 94%;
     --secondary-foreground: 252 10% 25%;
@@ -48,7 +23,8 @@
     --destructive-foreground: 0 0% 98%;
     --border: 252 20% 86%;
     --input: 252 20% 86%;
-    --ring: 147 87% 79%;
+    --ring: 265 71% 75%;
+    --radius: 1rem;
   }
 
   .dark {
@@ -58,7 +34,7 @@
     --card-foreground: 0 0% 98%;
     --popover: 260 25% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 265 71% 75%;
+    --primary: 265 71% 75%; /* Tom principal de lilás */
     --primary-foreground: 260 25% 15%;
     --secondary: 260 30% 20%;
     --secondary-foreground: 0 0% 98%;
@@ -89,19 +65,19 @@
   }
 
   .h1 {
-    @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl;
+    @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl font-display;
   }
 
   .h2 {
-    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+    @apply text-3xl font-bold tracking-tight sm:text-4xl font-display;
   }
 
   .h3 {
-    @apply text-2xl font-bold tracking-tight sm:text-3xl;
+    @apply text-2xl font-bold tracking-tight sm:text-3xl font-display;
   }
 
   .h4 {
-    @apply text-xl font-bold tracking-tight sm:text-2xl;
+    @apply text-xl font-bold tracking-tight sm:text-2xl font-display;
   }
 
   .container-custom {
@@ -128,11 +104,11 @@
   }
   
   .glass-card {
-    @apply bg-secondary/70 backdrop-blur-md border border-border/50 shadow-md;
+    @apply bg-secondary/70 backdrop-blur-md border border-primary/30 shadow-md rounded-xl;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02];
   }
   
   .btn-primary {
@@ -144,7 +120,6 @@
   }
 }
 
-/* Custom animations */
 @layer utilities {
   .animate-delay-100 {
     animation-delay: 100ms;

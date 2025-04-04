@@ -1,6 +1,7 @@
 
 import { ArrowDownIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -41,26 +42,29 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1">
             <p className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary-foreground bg-primary rounded-full animate-fade-in shadow-sm">
-              Full-Stack Developer
+              Consultoria em NLP · Chatbots · Assistentes Customizados
             </p>
-            <h1 className="h1 mb-6 animate-fade-in animate-delay-100 text-balance">Crafting Digital Experiences with Precision & Purpose</h1>
+            <h1 className="h1 mb-6 animate-fade-in animate-delay-100 text-balance">
+              Chatbots Inteligentes que Conectam Linguagem e Negócios
+            </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl text-balance animate-fade-in animate-delay-200">
-              I build innovative web applications with modern technologies and user-centered design.
-              From concept to deployment, I bring ideas to life with clean code and thoughtful UX.
+              Desenvolvo soluções personalizadas de processamento de linguagem natural para 
+              automatizar processos e aprimorar a comunicação com seus clientes.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-300">
-              <a
-                href="#projects"
-                className="btn-primary"
+              <Button 
+                size="lg"
+                className="bg-blue-bright hover:bg-blue-bright/90 text-white"
               >
-                View My Work
-              </a>
-              <a
-                href="#contact"
-                className="btn-secondary"
+                Explorar Biblioteca
+              </Button>
+              <Button 
+                variant="outline"
+                size="lg"
+                className="border-primary text-primary hover:bg-primary/10"
               >
-                Get In Touch
-              </a>
+                Conversar Agora
+              </Button>
             </div>
           </div>
           

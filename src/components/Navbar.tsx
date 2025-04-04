@@ -1,17 +1,19 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon, XIcon, MessageCircleIcon } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
+    { name: "Início", href: "#" },
+    { name: "Blog", href: "#projects" },
+    { name: "Ferramentas", href: "#skills" },
+    { name: "Consultoria", href: "#contact" },
   ];
 
   useEffect(() => {
@@ -43,7 +45,7 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#" className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">
-          Portfolio
+          NLP Solutions
         </a>
 
         {/* Desktop Navigation */}
@@ -57,6 +59,13 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
+          <Button 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground ml-4"
+            size="sm"
+          >
+            <MessageCircleIcon className="mr-2 h-4 w-4" /> 
+            Fale com meu Assistente
+          </Button>
           <ThemeToggle />
         </nav>
 
@@ -96,6 +105,12 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
+          <Button 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground mt-4"
+          >
+            <MessageCircleIcon className="mr-2 h-4 w-4" /> 
+            Fale com meu Assistente
+          </Button>
         </nav>
       </div>
     </header>

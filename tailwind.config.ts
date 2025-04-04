@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,7 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				display: ['Poppins', 'SF Pro Display', 'system-ui', 'sans-serif'],
 				mono: ['SF Mono', 'Menlo', 'monospace'],
 			},
 			colors: {
@@ -57,6 +57,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Cores customizadas
 				purple: {
 					DEFAULT: '#9b87f5',
 					light: '#D6BCFA',
@@ -68,7 +69,8 @@ export default {
 					DEFAULT: '#D946EF'
 				},
 				blue: {
-					bright: '#1EAEDB'
+					bright: '#6A98F0', // Azul mais pastel
+					pastel: '#d8e2f9' // Azul pastel claro
 				},
 				charcoal: {
 					DEFAULT: '#403E43'
