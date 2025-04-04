@@ -1,7 +1,7 @@
 
-import { ArrowDownIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
+import { SparklesIcon, ChatBubbleOvalLeftIcon, ArrowDownIcon } from "lucide-react";
 
 const Hero = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -41,33 +41,48 @@ const Hero = () => {
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1">
-            <p className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary-foreground bg-primary rounded-full animate-fade-in shadow-sm">
+            {/* Badge de Destaque */}
+            <div className="inline-flex items-center px-4 py-2 mb-4 text-sm font-medium text-primary-foreground bg-primary rounded-full animate-fade-in shadow-sm">
+              <SparklesIcon className="w-4 h-4 mr-2" />
               Consultoria em NLP · Chatbots · Assistentes Customizados
-            </p>
+            </div>
+            
+            {/* Título com Gradiente */}
             <h1 className="h1 mb-6 animate-fade-in animate-delay-100 text-balance">
-              Chatbots Inteligentes que Conectam Linguagem e Negócios
+              <span className="bg-gradient-to-r from-primary via-blue-bright to-purple-dark bg-clip-text text-transparent">
+                Chatbots Inteligentes
+              </span>{' '}
+              <br className="hidden sm:block" />
+              que Conectam Linguagem e Negócios
             </h1>
+            
+            {/* Subtítulo */}
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl text-balance animate-fade-in animate-delay-200">
               Desenvolvo soluções personalizadas de processamento de linguagem natural para 
               automatizar processos e aprimorar a comunicação com seus clientes.
             </p>
+            
+            {/* CTAs Aprimorados */}
             <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-300">
               <Button 
                 size="lg"
-                className="bg-blue-bright hover:bg-blue-bright/90 text-white"
+                className="bg-gradient-to-r from-primary to-blue-bright hover:from-primary/90 hover:to-blue-bright/90 text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
               >
                 Explorar Biblioteca
               </Button>
+              
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-primary text-primary hover:bg-primary/10"
+                className="flex items-center space-x-2 border-primary text-primary hover:bg-primary/10"
               >
-                Conversar Agora
+                <ChatBubbleOvalLeftIcon className="w-5 h-5" />
+                <span>Conversar Agora</span>
               </Button>
             </div>
           </div>
           
+          {/* Elemento Visual */}
           <div className="order-1 md:order-2 animate-fade-in animate-delay-400">
             <div className="relative rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] card-hover">
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-70 z-10"></div>
