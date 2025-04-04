@@ -86,7 +86,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#projects" aria-label="Scroll to projects" className="p-2 rounded-full bg-secondary/50 hover:bg-secondary/80 transition-colors">
+        <a href="#services" aria-label="Scroll to services" className="p-2 rounded-full bg-secondary/50 hover:bg-secondary/80 transition-colors">
           <ArrowDownIcon className="h-6 w-6 text-foreground/80" />
         </a>
       </div>
