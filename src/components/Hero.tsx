@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
-import { SparklesIcon, ChatBubbleOvalLeftIcon, ArrowDownIcon } from "lucide-react";
+import { SparklesIcon, MessageCircle, ArrowDownIcon } from "lucide-react";
 
 const Hero = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -76,7 +76,7 @@ const Hero = () => {
                 size="lg"
                 className="flex items-center space-x-2 border-primary text-primary hover:bg-primary/10"
               >
-                <ChatBubbleOvalLeftIcon className="w-5 h-5" />
+                <MessageCircle className="w-5 h-5" />
                 <span>Conversar Agora</span>
               </Button>
             </div>
