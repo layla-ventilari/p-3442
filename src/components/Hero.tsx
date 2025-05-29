@@ -65,7 +65,7 @@ const Hero = () => {
         {/* Elemento Visual */}
         <div className="mt-16 mx-auto max-w-3xl">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 aspect-video flex items-center justify-center bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20">
-            <img alt="Equipe Lavent cocriando experiências com IA" className="w-full h-full object-cover" src="/lovable-uploads/3c328cd3-9ff6-48b7-b142-ffb972acc364.png" />
+            <img alt="Equipe Lavent cocriando experiências com IA" className="w-full h-full object-cover" src="/lovable-uploads/b657c774-6482-40e8-8552-09118daaa18f.png" />
           </div>
         </div>
       </div>
