@@ -1,6 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Projects from "@/components/Projects";
 import AIToolsLibrary from "@/components/AIToolsLibrary";
 import Contact from "@/components/Contact";
@@ -15,6 +16,7 @@ const Index = () => {
       <BackgroundPattern />
       <main className="flex-grow">
         <Hero />
+        <About />
         <Services />
         <Projects />
         <AIToolsLibrary />

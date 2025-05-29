@@ -3,9 +3,11 @@ import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon, MessageCircleIcon } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { Button } from "./ui/button";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const navItems = [{
     name: "Início",
     href: "#"
@@ -19,13 +21,16 @@ const Navbar = () => {
     name: "Consultoria",
     href: "#contact"
   }];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
     if (!mobileMenuOpen) {
@@ -34,9 +39,18 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     }
   };
+
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-apple", isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6")}>
       <div className="container-custom flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">Lavent Studio</a>
+        {/* Logo Placeholder */}
+        <div className="flex items-center space-x-3">
+          <div className="logo-placeholder w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-lg">L</span>
+          </div>
+          <a href="#" className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent">
+            Lavent Studio
+          </a>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -75,4 +89,5 @@ const Navbar = () => {
       </div>
     </header>;
 };
+
 export default Navbar;
