@@ -45,7 +45,7 @@ const Hero = () => {
           Transformamos ideias em campanhas inteligentes e acessíveis
         </h1>
 
-        <p className="text-lg text-gray-700 mt-6 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-200">
+        <p className="text-lg mt-6 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-200 text-violet-800">
           Unimos inteligência artificial, design sensível e propósito humano para criar experiências memoráveis.
         </p>
 
