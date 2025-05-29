@@ -13,9 +13,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">Lavent Studio</a>
-            <p className="mt-2 text-muted-foreground">
-              Crafting digital experiences with precision and purpose.
-            </p>
+            <p className="mt-2 text-muted-foreground">Criando Experiências Inteligentes com Propósito</p>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
