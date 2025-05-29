@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center bg-transparent opacity-0 translate-y-6 transition-all duration-1000"
+      className="relative min-h-screen flex items-center justify-center bg-transparent opacity-0 translate-y-6 transition-all duration-1000 pt-20"
     >
       {/* Orbe de Animação */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
@@ -52,7 +52,7 @@ const Hero = () => {
 
       {/* Container Principal */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in animate-delay-100 mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in animate-delay-100 mb-6">
           Transformamos ideias em campanhas inteligentes e acessíveis
         </h1>
 
@@ -83,7 +83,7 @@ const Hero = () => {
         <div className="mt-16 mx-auto max-w-3xl">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 flex items-center justify-center">
             <img 
-              src="/lovable-uploads/36486274-1ac2-47ab-b2a7-2f7befb45232.png" 
+              src="/lovable-uploads/8ccf8994-9684-4a3b-873e-5aba5e55fdc1.png" 
               alt="Equipe Lavent cocriando experiências com IA"
               className="w-full h-auto"
             />
