@@ -1,33 +1,25 @@
-
 import { useEffect, useRef } from "react";
-
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("opacity-100");
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100");
+        observer.unobserve(entry.target);
+      }
+    }, {
+      threshold: 0.1
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
     };
   }, []);
-
-  return (
-    <section id="about" ref={sectionRef} className="py-20 bg-gradient-to-br from-background to-secondary/20 opacity-0 transition-opacity duration-1000">
+  return <section id="about" ref={sectionRef} className="py-20 bg-gradient-to-br from-background to-secondary/20 opacity-0 transition-opacity duration-1000">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="h2 mb-6 bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in">
@@ -59,19 +51,13 @@ const About = () => {
             
             <div className="animate-fade-in animate-delay-400">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/8ccf8994-9684-4a3b-873e-5aba5e55fdc1.png" 
-                  alt="Ilustração de impacto humano com inteligência artificial"
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent" />
+                
+                
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
