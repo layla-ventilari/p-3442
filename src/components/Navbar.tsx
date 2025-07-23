@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon, MessageCircleIcon } from "lucide-react";
@@ -8,6 +7,7 @@ import { Button } from "./ui/button";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showInfo, setShowInfo] = useState(false); // Novo estado
 
   const navItems = [
     { name: "Início", href: "/" },
@@ -43,6 +43,21 @@ const Navbar = () => {
           : "bg-transparent py-6"
       )}
     >
+      {/* Overlay de informação */}
+      {showInfo && (
+        <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40">
+          <div className="bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <span className="text-lg font-semibold mb-2">Em desenvolvimento</span>
+            <span className="text-sm text-zinc-500 mb-4">Este recurso estará disponível em breve.</span>
+            <button
+              className="bg-gradient-to-r from-purple-600 to-blue-800 text-white px-4 py-2 rounded-full"
+              onClick={() => setShowInfo(false)}
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      )}
       <div className="container-custom flex items-center justify-between">
         {/* Logo Placeholder */}
         <div className="flex items-center space-x-3">
@@ -68,7 +83,11 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <Button className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white ml-4 rounded-full px-6" size="sm">
+          <Button
+            className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white ml-4 rounded-full px-6"
+            size="sm"
+            onClick={() => setShowInfo(true)}
+          >
             <MessageCircleIcon className="mr-2 h-4 w-4" /> 
             Fale com meu Assistente
           </Button>
@@ -107,7 +126,10 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <Button className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white mt-4 rounded-full px-6">
+          <Button
+            className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white mt-4 rounded-full px-6"
+            onClick={() => setShowInfo(true)}
+          >
             <MessageCircleIcon className="mr-2 h-4 w-4" /> 
             Fale com meu Assistente
           </Button>
