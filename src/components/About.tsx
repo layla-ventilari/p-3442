@@ -1,9 +1,6 @@
-
 import { useEffect, useRef } from "react";
-
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -13,24 +10,16 @@ const About = () => {
     }, {
       threshold: 0.1
     });
-
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
     };
   }, []);
-
-  return (
-    <section 
-      id="about" 
-      ref={sectionRef} 
-      className="py-20 bg-gradient-to-br from-background to-secondary/20 opacity-0 transition-opacity duration-1000"
-    >
+  return <section id="about" ref={sectionRef} className="py-20 bg-gradient-to-br from-background to-secondary/20 opacity-0 transition-opacity duration-1000">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           <h2 className="h2 mb-12 text-center bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in">
@@ -40,7 +29,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 animate-fade-in animate-delay-200">
               <p className="text-xl text-muted-foreground leading-relaxed">
-                A Lavent Studio nasceu para criar experiências que combinam criatividade, tecnologia e comportamento humano. Como AI Engineer, UX/UI Designer e estrategista criativa, desenvolvo sistemas, interfaces, identidades e automações que tornam o digital mais intuitivo, acessível e inteligente. Meu trabalho une IA humanizada, design inclusivo e impacto social, entregando soluções que realmente fazem diferença no dia a dia.
+                A Lavent Studio nasceu para criar experiências que combinam criatividade, tecnologia e comportamento humano. Como AI Engineer, UX/UI Designer e estrategista criativa, desenvolvo sistemas, interfaces, identidades e automações que tornam o digital mais intuitivo, acessível e inteligente.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -73,8 +62,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
