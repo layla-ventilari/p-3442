@@ -40,11 +40,11 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 animate-fade-in animate-delay-200">
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Mais que uma agência, somos um ecossistema de inovação. Utilizamos inteligência artificial para cocriar campanhas com propósito, sensibilidade e acessibilidade.
+                A Lavent Studio nasceu para criar experiências que combinam criatividade, tecnologia e comportamento humano. Como AI Engineer, UX/UI Designer e estrategista criativa, desenvolvo sistemas, interfaces, identidades e automações que tornam o digital mais intuitivo, acessível e inteligente. Meu trabalho une IA humanizada, design inclusivo e impacto social, entregando soluções que realmente fazem diferença no dia a dia.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A Lavent é a ponte entre marcas e pessoas, aliando dados, linguagem e emoção para criar experiências que transformam realidades.
+                Minha missão é transformar processos complexos em experiências claras, bonitas e funcionais — sempre guiadas por propósito, empatia e visão estratégica.
               </p>
               
               <div className="flex flex-wrap gap-4">

@@ -33,10 +33,10 @@ const Projects = () => {
       <div className="container-custom">
         <div className={cn("mb-16 text-center opacity-0", isVisible && "animate-fade-in")}>
           <h2 className="h2 mb-6 bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent">
-            Blog & Insights
+            Insights que conectam criatividade, tecnologia e experiência
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Campanhas que nascem para inspirar e transformar. Do insight à entrega, cuidamos de cada detalhe para que sua campanha ganhe alma, forma e escala.
+            Uma seleção dos meus estudos, processos e experimentos envolvendo UX, IA aplicada, automação, branding, marketing e desenvolvimento de produtos digitais.
           </p>
           
           <Button 
@@ -44,7 +44,7 @@ const Projects = () => {
             className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 rounded-full px-8 py-3 font-medium"
           >
             <ArrowRight className="w-5 h-5 mr-2" />
-            Ver Todos os Artigos
+            Explorar todos os artigos
           </Button>
         </div>
 
