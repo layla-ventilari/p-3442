@@ -1,6 +1,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { ArrowLeft, Search, Calendar, Clock, ExternalLinkIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { posts } from "@/data/postsData";
 import { cn } from "@/lib/utils";
@@ -38,9 +39,6 @@ const Blog = () => {
     return matchesSearch && matchesTag;
   });
 
-  const handleBackToHome = () => {
-    window.location.href = '/';
-  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -52,14 +50,15 @@ const Blog = () => {
         <section className="pt-32 pb-16 bg-gradient-to-br from-background to-secondary/20">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
-              <Button 
-                onClick={handleBackToHome}
-                variant="outline" 
-                className="mb-8 border-purple-600 text-purple-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-800 hover:text-white transition-all duration-300 rounded-full"
-              >
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Voltar ao Início
-              </Button>
+              <Link to="/">
+                <Button 
+                  variant="outline" 
+                  className="mb-8 border-purple-600 text-purple-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-800 hover:text-white transition-all duration-300 rounded-full"
+                >
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Voltar ao Início
+                </Button>
+              </Link>
               
               <h1 className="h1 mb-6 bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent">
                 Blog & Insights Lavent

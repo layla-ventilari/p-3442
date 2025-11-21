@@ -1,6 +1,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import { ExternalLinkIcon, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { posts } from "@/data/postsData";
 import { Button } from "./ui/button";
@@ -24,9 +25,6 @@ const Projects = () => {
     return () => sectionRef.current && observer.unobserve(sectionRef.current);
   }, []);
 
-  const handleBlogNavigation = () => {
-    window.location.href = '/blog';
-  };
 
   return (
     <section id="blog" ref={sectionRef} className="py-20 md:py-32 bg-gradient-to-br from-background to-secondary/10">
@@ -39,13 +37,14 @@ const Projects = () => {
             Uma seleção dos meus estudos, processos e experimentos envolvendo UX, IA aplicada, automação, branding, marketing e desenvolvimento de produtos digitais.
           </p>
           
-          <Button 
-            onClick={handleBlogNavigation}
-            className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 rounded-full px-8 py-3 font-medium"
-          >
-            <ArrowRight className="w-5 h-5 mr-2" />
-            Explorar todos os artigos
-          </Button>
+          <Link to="/blog">
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 rounded-full px-8 py-3 font-medium"
+            >
+              <ArrowRight className="w-5 h-5 mr-2" />
+              Explorar todos os artigos
+            </Button>
+          </Link>
         </div>
 
         <div className="max-w-5xl mx-auto">
