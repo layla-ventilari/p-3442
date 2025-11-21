@@ -46,7 +46,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg mt-6 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-200 text-violet-600">
-          Construo soluções digitais que unem inteligência artificial, UX/UI e marketing inteligente para impulsionar marcas, negócios e pessoas. A Lavent Studio é meu ecossistema criativo — onde tecnologia encontra humanidade.
+          Construo soluções digitais que unem inteligência artificial, UX/UI e marketing inteligente para impulsionar marcas, negócios e pessoas. A Lavent Studio é meu ecossistema criativo, onde tecnologia encontra humanidade.
         </p>
 
         {/* CTAs */}
