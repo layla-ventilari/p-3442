@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon, MessageCircleIcon } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
@@ -64,24 +65,34 @@ const Navbar = () => {
           <div className="logo-placeholder w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">L</span>
           </div>
-          <a 
-            href="/" 
+          <Link 
+            to="/" 
             className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent"
           >
             Lavent Studio
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
-            <a 
-              key={item.name} 
-              href={item.href} 
-              className="hover-underline text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-            >
-              {item.name}
-            </a>
+            item.href.startsWith('#') ? (
+              <a 
+                key={item.name} 
+                href={item.href} 
+                className="hover-underline text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link 
+                key={item.name} 
+                to={item.href} 
+                className="hover-underline text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                {item.name}
+              </Link>
+            )
           ))}
           <Button
             className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white ml-4 rounded-full px-6"
@@ -117,14 +128,25 @@ const Navbar = () => {
       >
         <nav className="flex flex-col items-center justify-center h-full space-y-8">
           {navItems.map((item) => (
-            <a 
-              key={item.name} 
-              href={item.href} 
-              onClick={toggleMobileMenu} 
-              className="text-xl font-medium hover:text-primary transition-colors"
-            >
-              {item.name}
-            </a>
+            item.href.startsWith('#') ? (
+              <a 
+                key={item.name} 
+                href={item.href} 
+                onClick={toggleMobileMenu} 
+                className="text-xl font-medium hover:text-primary transition-colors"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link 
+                key={item.name} 
+                to={item.href} 
+                onClick={toggleMobileMenu} 
+                className="text-xl font-medium hover:text-primary transition-colors"
+              >
+                {item.name}
+              </Link>
+            )
           ))}
           <Button
             className="bg-gradient-to-r from-purple-600 to-blue-800 hover:from-purple-700 hover:to-blue-900 text-white mt-4 rounded-full px-6"
