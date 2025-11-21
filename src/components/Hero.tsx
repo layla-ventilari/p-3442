@@ -42,11 +42,11 @@ const Hero = () => {
       {/* Container Principal */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in animate-delay-100 mb-6">
-          Transformamos ideias em campanhas inteligentes e acessíveis
+          Criatividade, IA e Design que transformam ideias em experiências poderosas
         </h1>
 
         <p className="text-lg mt-6 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-200 text-violet-600">
-          Unimos inteligência artificial, design sensível e propósito humano para criar experiências memoráveis.
+          Construo soluções digitais que unem inteligência artificial, UX/UI e marketing inteligente para impulsionar marcas, negócios e pessoas. A Lavent Studio é meu ecossistema criativo — onde tecnologia encontra humanidade.
         </p>
 
         {/* CTAs */}
@@ -65,7 +65,7 @@ const Hero = () => {
         {/* Elemento Visual */}
         <div className="mt-16 mx-auto max-w-3xl">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 aspect-video flex items-center justify-center bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20">
-            <img alt="Equipe Lavent cocriando experiências com IA" className="w-full h-full object-cover" src="/lovable-uploads/b657c774-6482-40e8-8552-09118daaa18f.png" />
+            <img alt="Inteligência aplicada com propósito humano" className="w-full h-full object-cover" src="/lovable-uploads/b657c774-6482-40e8-8552-09118daaa18f.png" />
           </div>
         </div>
       </div>

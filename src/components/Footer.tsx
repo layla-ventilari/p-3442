@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">Lavent Studio</a>
-            <p className="mt-2 text-muted-foreground">Criando Experiências Inteligentes com Propósito</p>
+            <p className="mt-2 text-muted-foreground">Criatividade, tecnologia e inteligência humana para transformar ideias em experiências que fazem sentido.</p>
           </div>
           
           <div className="flex flex-col items-center md:items-end">

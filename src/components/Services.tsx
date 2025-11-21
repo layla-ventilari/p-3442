@@ -28,19 +28,34 @@ const Services = () => {
 
   const services = [
     {
-      title: "IA Aplicada",
-      description: "Utilizamos inteligência artificial para cocriar campanhas com propósito, sensibilidade e acessibilidade",
-      icon: "🤖"
-    },
-    {
-      title: "Design Centrado no Usuário",
-      description: "Criamos experiências que tocam, com acessibilidade que liberta e narrativas autênticas",
+      title: "UX/UI Design",
+      description: "Interfaces modernas, intuitivas e centradas no usuário, pensadas para converter e encantar.",
       icon: "🎨"
     },
     {
-      title: "Impacto Humano",
-      description: "Aliamos dados, linguagem e emoção para criar campanhas que ganham alma, forma e escala",
-      icon: "💫"
+      title: "IA Aplicada a Negócios",
+      description: "Agentes, automações e sistemas inteligentes que ampliam resultados e reduzem esforço operacional.",
+      icon: "🤖"
+    },
+    {
+      title: "Marketing Inteligente",
+      description: "Estratégias criativas impulsionadas por dados, narrativas fortes e posicionamento claro.",
+      icon: "📊"
+    },
+    {
+      title: "CRM Inteligente (CRM)",
+      description: "Plataforma criada para organizar fluxo, prever demandas e transformar dados em decisões eficientes.",
+      icon: "💼"
+    },
+    {
+      title: "Identidade Visual",
+      description: "Marcas consistentes, elegantes e memoráveis, construídas para crescer junto com o negócio.",
+      icon: "✨"
+    },
+    {
+      title: "Landing Pages & Campanhas",
+      description: "Páginas otimizadas com foco em conversão, storytelling e impacto visual.",
+      icon: "🚀"
     }
   ];
 
@@ -48,12 +63,12 @@ const Services = () => {
     <section id="services" ref={sectionRef} className="py-20 bg-secondary/30 opacity-0 transition-opacity duration-1000">
       <div className="container-custom">
         <h2 className="h2 text-center mb-4 bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in">
-          Como unimos IA, criatividade e impacto humano
+          Serviços
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          Cada projeto integra tecnologia de ponta com design centrado no usuário. Acreditamos em narrativas que tocam, acessibilidade que liberta e inteligência que amplia.
+          Soluções integradas que unem tecnologia, estratégia e criatividade para transformar a forma como marcas e negócios se conectam com pessoas.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 

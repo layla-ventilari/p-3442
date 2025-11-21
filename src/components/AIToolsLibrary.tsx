@@ -11,7 +11,7 @@ const AIToolsLibrary = () => {
   });
   const ecosystemBranches = [{
     name: "Lavent Studio",
-    description: "Núcleo criativo da agência de campanhas com IA humanizada",
+    description: "Agência criativa onde design, IA e estratégia formam experiências inteligentes e identidades sólidas. Soluções feitas para marcas que desejam crescer com propósito.",
     features: [{
       name: "Campanhas Inteligentes",
       use: "Criação assistida por IA",
@@ -24,7 +24,7 @@ const AIToolsLibrary = () => {
     color: "from-purple-100 to-purple-50 dark:from-purple-900/30 dark:to-purple-800/20"
   }, {
     name: "Lavent Learning",
-    description: "Educação com IA aplicada e metodologias inovadoras",
+    description: "Espaço dedicado à educação acessível em IA, UX/UI, criatividade e tecnologia aplicada. Conteúdos práticos para quem quer aprender, evoluir e criar com autonomia.",
     features: [{
       name: "Aprendizado Adaptativo",
       use: "IA personaliza o ensino",
@@ -37,7 +37,7 @@ const AIToolsLibrary = () => {
     color: "from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20"
   }, {
     name: "Lavent Labs",
-    description: "Pesquisa e prototipagem com impacto humano",
+    description: "Meu laboratório experimental de agentes, automações, pesquisa e prototipação rápida — onde ideias se transformam em produtos inteligentes e experimentos avançados.",
     features: [{
       name: "Inovação Ética",
       use: "Tecnologia com propósito",
@@ -52,10 +52,10 @@ const AIToolsLibrary = () => {
   return <section id="skills" ref={ref} className={`py-20 bg-gradient-to-br from-background to-secondary/30 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="container-custom">
         <h2 className="h2 text-center mb-4 bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent">
-          Da Lavent Studio nascem experiências: Learning, Labs e além
+          Ecossistema Lavent
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          Somos o ponto de partida de um ecossistema: Lavent Learning – educação com IA aplicada, Lavent Labs – pesquisa e prototipagem com impacto humano.
+          Um sistema integrado de criação, educação e experimentação — onde cada projeto se conecta com propósito, tecnologia e impacto humano.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

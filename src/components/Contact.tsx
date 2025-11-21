@@ -117,11 +117,10 @@ const Contact = () => {
           isVisible && "animate-fade-in"
         )}>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent mb-6">
-            Vamos criar algo extraordinário juntos
+            Vamos conversar?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Tem um projeto em mente ou quer discutir uma colaboração? Entre em contato conosco. 
-            Estamos sempre abertos a novas oportunidades e desafios que unem IA, criatividade e impacto humano.
+            Se você deseja desenvolver um projeto criativo, implementar IA, melhorar a experiência do seu produto ou colaborar com o ecossistema Lavent, envie sua mensagem. Respondo pessoalmente ou através do meu assistente inteligente.
           </p>
         </div>
 
@@ -260,7 +259,7 @@ const Contact = () => {
                       "w-full px-4 py-3 bg-secondary/30 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50",
                       errors.message && "border-red-500"
                     )}
-                    placeholder="Conte-nos sobre seu projeto ou ideia..."
+                    placeholder="Conte um pouco sobre seu projeto..."
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
