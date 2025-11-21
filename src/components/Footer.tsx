@@ -20,9 +20,7 @@ const Footer = () => {
             <button onClick={scrollToTop} className="mb-4 p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-all hover:translate-y-[-2px]" aria-label="Scroll to top">
               <ArrowUpIcon className="h-5 w-5" />
             </button>
-            <p className="text-muted-foreground text-sm">
-              © {year} Portfolio. All rights reserved.
-            </p>
+            
           </div>
         </div>
       </div>
