@@ -91,13 +91,13 @@ const Projects = () => {
                     {post.description}
                   </p>
                   
-                  <a
-                    href={post.slug}
+                  <Link
+                    to={post.slug}
                     className="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-800 transition-colors group"
                   >
                     <ExternalLinkIcon className="h-4 w-4 mr-1.5 group-hover:translate-x-1 transition-transform" />
                     Ler artigo
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
